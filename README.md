@@ -11,6 +11,7 @@ Since Godot 3.2.4 beta, the AudioStream element supports mp3 streams. To showcas
 
 ## Notes on how to implement this from scratch
 
+- install Godot 3.2.4 beta
 - create directory
 - touch project.godot
 - godot -e
@@ -21,10 +22,11 @@ Since Godot 3.2.4 beta, the AudioStream element supports mp3 streams. To showcas
 - (set GLES2)
 - (project settings vram compression import etc)
 - give control Rect a Size of 300/512
-- create button butPlay, duplicate it twice
-- rename to butPause and butStop
-- - set butPlay to Toggle Mode on
+- create button butPlay
+- set butPlay to Toggle Mode on
 - create ItemList lstFiles and lstDirs
 - save to main.tscn
 - run once, select main.tscn
 - add script main.gd
+- create signal for butPlay with toggle_button
+- create signals for lst* with item_selected
