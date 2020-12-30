@@ -5,7 +5,7 @@ Since Godot 3.2.4 beta, the AudioStream element supports mp3 streams. To showcas
 ## Features
 - implements a mini mp3 player
 - requests permission to access media files on Android
-- loads files from external sources (i.e. not user:// or res://) (*works only on Android < 10 [due to this problem](https://github.com/godotengine/godot/issues/39414) at the moment*)
+- loads files from external sources (i.e. not user:// or res://) (*works only on Android < 10 [due to this problem](https://github.com/godotengine/godot/issues/39414#issuecomment-751412254) at the moment*)
 - plays files from the music directory
 - no design at all!
 
