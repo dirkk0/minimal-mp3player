@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+
+[node name="main" type="Control"]
+margin_right = 600.0
+margin_bottom = 1024.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="butPlay" type="Button" parent="."]
+margin_left = 31.0
+margin_top = 26.0
+margin_right = 75.0
+margin_bottom = 46.0
+disabled = true
+toggle_mode = true
+text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lstFiles" type="ItemList" parent="."]
+margin_left = 5.0
+margin_top = 192.0
+margin_right = 295.0
+margin_bottom = 502.0
+
+[node name="lstDirs" type="ItemList" parent="."]
+margin_left = 5.0
+margin_top = 60.0
+margin_right = 295.0
+margin_bottom = 183.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="musicPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="toggled" from="butPlay" to="." method="_on_butPlay_toggled"]
+[connection signal="item_selected" from="lstFiles" to="." method="_on_lstFiles_item_selected"]
+[connection signal="item_selected" from="lstDirs" to="." method="_on_lstDirs_item_selected"]
