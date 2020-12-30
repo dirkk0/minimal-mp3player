@@ -9,6 +9,8 @@ Since Godot 3.2.4 beta, the AudioStream element supports mp3 streams. To showcas
 - plays files from the music directory
 - no design at all!
 
+Binaries are included; if you check them out, don't forget to put something in the music directory.
+
 ## Notes on how to implement this from scratch
 
 - install Godot 3.2.4 beta
@@ -30,3 +32,6 @@ Since Godot 3.2.4 beta, the AudioStream element supports mp3 streams. To showcas
 - add script main.gd
 - create signal for butPlay with toggle_button
 - create signals for lst* with item_selected
+
+
+If you want to export to Android, set the permission 'Read External Storage', otherwise the APK won't see any files.
